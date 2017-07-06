@@ -1,0 +1,6 @@
+new
+load 'ttnulm.kicad_pcb'
+source-area 131.064 77.126 164.084 141.732
+copy 166.084 77.126
+copy 199.104 77.126
+save panel.kicad_pcb    

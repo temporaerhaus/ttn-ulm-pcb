@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/matt/code/lora/pcb/KiCAD/ttnulm/ttnulm.sch</source>
+    <date>Mo 26 Jun 2017 21:09:59 CEST</date>
+    <tool>Eeschema 4.0.6-e0-6349~53~ubuntu16.04.1</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>ttnulm.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>RFM95HW</value>
+      <footprint>footprints:RFM69HW_SMD_ThroughHole_Handsoldering</footprint>
+      <libsource lib="mysensors_radios" part="RFM95HW"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5950229E</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>CONN_01X04</value>
+      <libsource lib="conn" part="CONN_01X04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59502927</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>CONN_01X06</value>
+      <libsource lib="conn" part="CONN_01X06"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59514E69</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>CONN_01X02</value>
+      <libsource lib="conn" part="CONN_01X02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>595152F2</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>CONN_01X04</value>
+      <libsource lib="conn" part="CONN_01X04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>595157A0</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>CONN_02X01</value>
+      <libsource lib="conn" part="CONN_02X01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5951810C</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>CONN_01X01</value>
+      <libsource lib="conn" part="CONN_01X01"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>595187DE</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>CONN_01X03</value>
+      <libsource lib="conn" part="CONN_01X03"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59502D29</tstamp>
+    </comp>
+    <comp ref="X1">
+      <value>Arduino ProMini</value>
+      <footprint>footprints:Arduino_Pro_Mini</footprint>
+      <libsource lib="Arduino_Pro_Mini" part="Arduino_Pro_Mini"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>595024A2</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="Arduino_Pro_Mini" part="Arduino_Pro_Mini">
+      <description>Arduino Pro Mini module</description>
+      <docs>https://www.arduino.cc/en/Main/ArduinoBoardProMini</docs>
+      <fields>
+        <field name="Reference">X</field>
+        <field name="Value">Arduino_Pro_Mini</field>
+        <field name="Datasheet">https://www.arduino.cc/en/Main/ArduinoBoardProMini</field>
+      </fields>
+      <pins>
+        <pin num="1A" name="RAW" type="power_in"/>
+        <pin num="1B" name="GND" type="power_in"/>
+        <pin num="1C" name="DTR" type="passive"/>
+        <pin num="1D" name="1(Tx)" type="passive"/>
+        <pin num="2A" name="GND" type="power_in"/>
+        <pin num="2B" name="A6" type="passive"/>
+        <pin num="2C" name="TXO" type="passive"/>
+        <pin num="2D" name="0(Rx)" type="passive"/>
+        <pin num="3A" name="Reset" type="passive"/>
+        <pin num="3B" name="A7" type="passive"/>
+        <pin num="3C" name="RXI" type="passive"/>
+        <pin num="3D" name="Reset" type="passive"/>
+        <pin num="4A" name="Vcc" type="power_in"/>
+        <pin num="4B" name="A4" type="passive"/>
+        <pin num="4C" name="VCC" type="power_in"/>
+        <pin num="4D" name="Gnd" type="power_in"/>
+        <pin num="5A" name="A3" type="passive"/>
+        <pin num="5B" name="A5" type="passive"/>
+        <pin num="5C" name="GND" type="power_in"/>
+        <pin num="5D" name="2" type="passive"/>
+        <pin num="6A" name="A2" type="passive"/>
+        <pin num="6C" name="GND" type="power_in"/>
+        <pin num="6D" name="3" type="passive"/>
+        <pin num="7A" name="A1" type="passive"/>
+        <pin num="7D" name="4" type="passive"/>
+        <pin num="8A" name="A0" type="passive"/>
+        <pin num="8D" name="5" type="passive"/>
+        <pin num="9A" name="13(SCK)" type="passive"/>
+        <pin num="9D" name="6" type="passive"/>
+        <pin num="10A" name="12(MISO)" type="passive"/>
+        <pin num="10D" name="7" type="passive"/>
+        <pin num="11A" name="11(/MOSI)" type="passive"/>
+        <pin num="11D" name="8" type="passive"/>
+        <pin num="12A" name="10(/SS)" type="passive"/>
+        <pin num="12D" name="9" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X01">
+      <description>Connector, single row, 01x01, pin header</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X*</fp>
+        <fp>Pin_Header_Angled_1X*</fp>
+        <fp>Socket_Strip_Straight_1X*</fp>
+        <fp>Socket_Strip_Angled_1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X02">
+      <description>Connector, single row, 01x02, pin header</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X*</fp>
+        <fp>Pin_Header_Angled_1X*</fp>
+        <fp>Socket_Strip_Straight_1X*</fp>
+        <fp>Socket_Strip_Angled_1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X03">
+      <description>Connector, single row, 01x03, pin header</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X*</fp>
+        <fp>Pin_Header_Angled_1X*</fp>
+        <fp>Socket_Strip_Straight_1X*</fp>
+        <fp>Socket_Strip_Angled_1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X04">
+      <description>Connector, single row, 01x04, pin header</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X*</fp>
+        <fp>Pin_Header_Angled_1X*</fp>
+        <fp>Socket_Strip_Straight_1X*</fp>
+        <fp>Socket_Strip_Angled_1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_01X06">
+      <description>Connector, single row, 01x06, pin header</description>
+      <footprints>
+        <fp>Pin_Header_Straight_1X*</fp>
+        <fp>Pin_Header_Angled_1X*</fp>
+        <fp>Socket_Strip_Straight_1X*</fp>
+        <fp>Socket_Strip_Angled_1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_01X06</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="CONN_02X01">
+      <description>Connector, double row, 02x01, pin header</description>
+      <footprints>
+        <fp>Pin_Header_Straight_2X*</fp>
+        <fp>Pin_Header_Angled_2X*</fp>
+        <fp>Socket_Strip_Straight_2X*</fp>
+        <fp>Socket_Strip_Angled_2X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">CONN_02X01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="mysensors_radios" part="RFM95HW">
+      <description>RFM95HW, LORA +20dBm HopeRF Wireless Transceiver, Vcc=3.3V</description>
+      <docs>https://cdn-learn.adafruit.com/assets/assets/000/031/659/original/RFM95_96_97_98W.pdf?1460518717</docs>
+      <footprints>
+        <fp>RFM95*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">RFM95HW</field>
+        <field name="Footprint">mysensors_radios:RFM69HW_SMD_ThroughHole_Handsoldering</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="power_in"/>
+        <pin num="2" name="MISO" type="3state"/>
+        <pin num="3" name="MOSI" type="input"/>
+        <pin num="4" name="SCK" type="input"/>
+        <pin num="5" name="NSS" type="input"/>
+        <pin num="6" name="RESET" type="BiDi"/>
+        <pin num="7" name="DIO5" type="BiDi"/>
+        <pin num="8" name="GND" type="power_in"/>
+        <pin num="9" name="ANA" type="passive"/>
+        <pin num="10" name="GND" type="power_in"/>
+        <pin num="11" name="DIO3" type="BiDi"/>
+        <pin num="12" name="DIO4" type="BiDi"/>
+        <pin num="13" name="3.3V" type="power_in"/>
+        <pin num="14" name="DIO0" type="BiDi"/>
+        <pin num="15" name="DIO1" type="BiDi"/>
+        <pin num="16" name="DIO2" type="BiDi"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="Arduino_Pro_Mini">
+      <uri>/home/matt/code/lora/pcb/components/Arduino_Pro_Mini.lib</uri>
+    </library>
+    <library logical="mysensors_radios">
+      <uri>/home/matt/code/lora/pcb/components/mysensors_radios.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="Ant">
+      <node ref="U1" pin="9"/>
+      <node ref="J6" pin="1"/>
+      <node ref="J7" pin="1"/>
+    </net>
+    <net code="2" name="Net-(X1-Pad4C)">
+      <node ref="X1" pin="4C"/>
+    </net>
+    <net code="3" name="Net-(X1-Pad5C)">
+      <node ref="X1" pin="5C"/>
+    </net>
+    <net code="4" name="Net-(X1-Pad6C)">
+      <node ref="X1" pin="6C"/>
+    </net>
+    <net code="5" name="GND">
+      <node ref="U1" pin="10"/>
+      <node ref="U1" pin="8"/>
+      <node ref="X1" pin="4D"/>
+      <node ref="J5" pin="2"/>
+      <node ref="J1" pin="4"/>
+      <node ref="U1" pin="1"/>
+      <node ref="X1" pin="2A"/>
+      <node ref="J6" pin="2"/>
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="6" name="Net-(X1-Pad3C)">
+      <node ref="X1" pin="3C"/>
+    </net>
+    <net code="7" name="Net-(X1-Pad3B)">
+      <node ref="X1" pin="3B"/>
+    </net>
+    <net code="8" name="Net-(X1-Pad2B)">
+      <node ref="X1" pin="2B"/>
+    </net>
+    <net code="9" name="Net-(X1-Pad1B)">
+      <node ref="X1" pin="1B"/>
+    </net>
+    <net code="10" name="Net-(J5-Pad3)">
+      <node ref="J5" pin="3"/>
+      <node ref="X1" pin="4B"/>
+    </net>
+    <net code="11" name="Net-(U1-Pad6)">
+      <node ref="U1" pin="6"/>
+    </net>
+    <net code="12" name="Net-(U1-Pad11)">
+      <node ref="U1" pin="11"/>
+    </net>
+    <net code="13" name="Net-(U1-Pad12)">
+      <node ref="U1" pin="12"/>
+    </net>
+    <net code="14" name="Net-(X1-Pad3A)">
+      <node ref="X1" pin="3A"/>
+    </net>
+    <net code="15" name="Net-(X1-Pad1C)">
+      <node ref="X1" pin="1C"/>
+    </net>
+    <net code="16" name="Net-(X1-Pad2C)">
+      <node ref="X1" pin="2C"/>
+    </net>
+    <net code="17" name="Net-(J1-Pad5)">
+      <node ref="J1" pin="5"/>
+      <node ref="X1" pin="5D"/>
+    </net>
+    <net code="18" name="Net-(J1-Pad6)">
+      <node ref="J1" pin="6"/>
+      <node ref="X1" pin="6D"/>
+    </net>
+    <net code="19" name="+3V3">
+      <node ref="J5" pin="4"/>
+      <node ref="J3" pin="3"/>
+      <node ref="U1" pin="13"/>
+      <node ref="X1" pin="4A"/>
+    </net>
+    <net code="20" name="Net-(J3-Pad1)">
+      <node ref="X1" pin="1A"/>
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="21" name="Net-(J4-Pad4)">
+      <node ref="J4" pin="4"/>
+      <node ref="X1" pin="5A"/>
+    </net>
+    <net code="22" name="Net-(J1-Pad1)">
+      <node ref="X1" pin="1D"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="23" name="Net-(J1-Pad2)">
+      <node ref="X1" pin="2D"/>
+      <node ref="J1" pin="2"/>
+    </net>
+    <net code="24" name="Net-(J1-Pad3)">
+      <node ref="J1" pin="3"/>
+      <node ref="X1" pin="3D"/>
+    </net>
+    <net code="25" name="Net-(J2-Pad1)">
+      <node ref="X1" pin="12D"/>
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="26" name="Net-(J2-Pad2)">
+      <node ref="X1" pin="11D"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="27" name="Net-(J5-Pad1)">
+      <node ref="X1" pin="5B"/>
+      <node ref="J5" pin="1"/>
+    </net>
+    <net code="28" name="MISO">
+      <node ref="U1" pin="2"/>
+      <node ref="X1" pin="10A"/>
+    </net>
+    <net code="29" name="MOSI">
+      <node ref="X1" pin="11A"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="30" name="CLK">
+      <node ref="X1" pin="9A"/>
+      <node ref="U1" pin="4"/>
+    </net>
+    <net code="31" name="D10">
+      <node ref="U1" pin="5"/>
+      <node ref="X1" pin="12A"/>
+    </net>
+    <net code="32" name="D6">
+      <node ref="U1" pin="7"/>
+      <node ref="X1" pin="9D"/>
+    </net>
+    <net code="33" name="D4">
+      <node ref="X1" pin="7D"/>
+      <node ref="U1" pin="14"/>
+    </net>
+    <net code="34" name="D5">
+      <node ref="U1" pin="15"/>
+      <node ref="X1" pin="8D"/>
+    </net>
+    <net code="35" name="D7">
+      <node ref="U1" pin="16"/>
+      <node ref="X1" pin="10D"/>
+    </net>
+    <net code="36" name="Net-(J4-Pad1)">
+      <node ref="J4" pin="1"/>
+      <node ref="X1" pin="8A"/>
+    </net>
+    <net code="37" name="Net-(J4-Pad2)">
+      <node ref="J4" pin="2"/>
+      <node ref="X1" pin="7A"/>
+    </net>
+    <net code="38" name="Net-(J4-Pad3)">
+      <node ref="J4" pin="3"/>
+      <node ref="X1" pin="6A"/>
+    </net>
+  </nets>
+</export>
