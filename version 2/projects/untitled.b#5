@@ -1660,6 +1660,33 @@ for trimmer refence see : &lt;u&gt;www.electrospec-inc.com/cross_references/trim
 </package>
 </packages>
 </library>
+<library name="lm1117">
+<description>&lt;b&gt;LM1117 Voltage Regulator&lt;/b&gt;
+&lt;p&gt;800mA LDO Regulator, available in 1.8V, 2.5V, 2.85V, 3.3V, 5V, and adjustable versions.&lt;/p&gt;</description>
+<packages>
+<package name="SOT223">
+<description>&lt;b&gt;SOT-223 Small-Outline Transistor Package&lt;/b&gt;</description>
+<wire x1="3.277" y1="1.778" x2="3.277" y2="-1.778" width="0.2032" layer="21"/>
+<wire x1="3.277" y1="-1.778" x2="-3.277" y2="-1.778" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="-1.778" x2="-3.277" y2="1.778" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="1.778" x2="3.277" y2="1.778" width="0.2032" layer="21"/>
+<smd name="1" x="-2.311" y="-3.099" dx="1.219" dy="2.235" layer="1"/>
+<smd name="2" x="0" y="-3.099" dx="1.219" dy="2.235" layer="1"/>
+<smd name="3" x="2.311" y="-3.099" dx="1.219" dy="2.235" layer="1"/>
+<smd name="TAB" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
+<text x="-3.8608" y="-1.27" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.1308" y="-1.27" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
+<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
+<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1896,6 +1923,9 @@ design rules under a new name.</description>
 <element name="C7" library="rcl" package="C0805" value="100n" x="12.192" y="24.384" rot="R90"/>
 <element name="U$6" library="_c2h" package="RFM95" value="RFM95" x="20.32" y="24.13" rot="R180"/>
 <element name="J$1" library="_c2h" package="SMA_UFL_PAD_TINY" value="ANTENNATINY" x="1.778" y="30.988" rot="R180"/>
+<element name="IC1" library="lm1117" package="SOT223" value="LM1117IMPX-3.3" x="10.16" y="11.684"/>
+<element name="C8" library="rcl" package="C0805" value="10u" x="24.384" y="11.176"/>
+<element name="C9" library="rcl" package="C0805" value="10u" x="24.384" y="5.588"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -1945,6 +1975,9 @@ design rules under a new name.</description>
 <via x="2.286" y="35.56" extent="1-16" drill="0.6"/>
 <contactref element="J$1" pad="GND1"/>
 <contactref element="J$1" pad="GND4"/>
+<contactref element="C8" pad="2"/>
+<contactref element="C9" pad="2"/>
+<contactref element="IC1" pad="1"/>
 <wire x1="4.1275" y1="28.448" x2="4.0005" y2="29.51775" width="0" layer="19" extent="1-1"/>
 <wire x1="16.499" y1="77.316" x2="19.192" y2="79.756" width="0" layer="19" extent="1-1"/>
 <wire x1="14.549" y1="77.316" x2="16.499" y2="77.316" width="0" layer="19" extent="1-1"/>
@@ -2016,6 +2049,12 @@ design rules under a new name.</description>
 <vertex x="0.762" y="81.026"/>
 <vertex x="0.762" y="58.166"/>
 </polygon>
+<contactref element="IC1" pad="TAB"/>
+<contactref element="IC1" pad="2"/>
+<contactref element="C9" pad="1"/>
+<wire x1="10.16" y1="8.585" x2="23.434" y2="5.588" width="0" layer="19" extent="1-1"/>
+<wire x1="10.16" y1="14.783" x2="10.16" y2="8.585" width="0" layer="19" extent="1-1"/>
+<wire x1="12.496" y1="23.13" x2="10.16" y2="14.783" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="TXLED">
 <contactref element="U1" pad="23"/>
@@ -2097,6 +2136,10 @@ design rules under a new name.</description>
 <wire x1="15.24" y1="72.388053125" x2="15.24" y2="75.184" width="0.4064" layer="16"/>
 <via x="15.24" y="75.184" extent="1-16" drill="0.6"/>
 <wire x1="15.24" y1="75.184" x2="15.199" y2="77.316" width="0.4064" layer="1"/>
+<contactref element="IC1" pad="3"/>
+<contactref element="C8" pad="1"/>
+<wire x1="23.434" y1="11.176" x2="21.336" y2="70.996" width="0" layer="19" extent="1-1"/>
+<wire x1="12.471" y1="8.585" x2="23.434" y2="11.176" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="SCL">
 <contactref element="U$1" pad="D13"/>
