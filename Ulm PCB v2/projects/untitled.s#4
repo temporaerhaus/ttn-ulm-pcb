@@ -7194,6 +7194,15 @@ End launch SMA connector. The paste layer has been removed so that the connector
 <label x="-157.48" y="320.04" size="1.778" layer="95"/>
 <pinref part="P+1" gate="1" pin="+5V"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="IN"/>
+<wire x1="-144.78" y1="424.18" x2="-149.86" y2="424.18" width="0.1524" layer="91"/>
+<label x="-152.4" y="424.18" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="-149.86" y1="424.18" x2="-152.4" y2="424.18" width="0.1524" layer="91"/>
+<wire x1="-149.86" y1="419.1" x2="-149.86" y2="424.18" width="0.1524" layer="91"/>
+<junction x="-149.86" y="424.18"/>
+</segment>
 </net>
 <net name="SCL" class="0">
 <segment>
@@ -7367,17 +7376,6 @@ End launch SMA connector. The paste layer has been removed so that the connector
 <wire x1="106.68" y1="403.86" x2="116.84" y2="414.02" width="0.1524" layer="91"/>
 <pinref part="J$1" gate="1" pin="SIGNAL"/>
 <wire x1="116.84" y1="426.72" x2="116.84" y2="414.02" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="VBUS" class="0">
-<segment>
-<pinref part="IC1" gate="G$1" pin="IN"/>
-<wire x1="-144.78" y1="424.18" x2="-149.86" y2="424.18" width="0.1524" layer="91"/>
-<label x="-152.4" y="424.18" size="1.778" layer="95" rot="R180" xref="yes"/>
-<pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="-149.86" y1="424.18" x2="-152.4" y2="424.18" width="0.1524" layer="91"/>
-<wire x1="-149.86" y1="419.1" x2="-149.86" y2="424.18" width="0.1524" layer="91"/>
-<junction x="-149.86" y="424.18"/>
 </segment>
 </net>
 </nets>
