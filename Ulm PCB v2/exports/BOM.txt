@@ -1,0 +1,36 @@
+Partlist
+
+Exported from untitled.brd at 21.08.17 15:00
+
+EAGLE Version 8.3.1 Copyright (c) 1988-2017 Autodesk, Inc.
+
+Assembly variant: 
+
+Part     Value          Package          Library             Position (mil)        Orientation
+
+C1       0.1uF          C0805            rcl                 (810 1350)            R180
+C2       0.1uF          C0805            rcl                 (1313.91289 1665.38164) R0
+C4       10u            C0805            rcl                 (1690 1840)           R90
+C5       10uF           EIA3216          SparkFun            (810 1180)            R90
+C6       100n           C0805            rcl                 (1320 240)            R0
+C7       100n           C0805            rcl                 (2000 1500)           R0
+C8       10µF           C0805            rcl                 (1566.85039 1610)     R270
+C9       1uF            C0805            rcl                 (1490 1880)           R270
+C10      10µF           C0805            rcl                 (1360 1890)           R270
+D2       MBR120         SOD-123          microbuilder        (1480 1670)           R90
+J$2      ANTENNATINY    SMA_UFL_PAD_TINY _c2h                (987 78)              R270
+J2                      JST-2-SMD        SparkFun-Connectors (2080 1800)           R270
+LED1     Red            LED-0603         SparkFun            (1302 1454)           R90
+LED2     Green          LED-0603         SparkFun            (1300 1498)           R90
+LED5     Green          LED-0603         SparkFun            (2150 1590)           R90
+R-PROG2  10k            R0805            rcl                 (1729 1509)           R0
+R1       1K             R0805            rcl                 (1441.77362 1371.70251) R0
+R2       1K             R0805            rcl                 (1463.76969 1463.82874) R0
+R3       330            R0805            rcl                 (1980 1590)           R180
+R4       100k           0603-NO          microbuilder        (1380 1780)           R180
+U$1                     ARDUINO_PRO_MINI arduinopromini      (1705.49065 893.14592) R0
+U$6      RFM95          RFM95            _c2h                (1090 580)            R270
+U1       FT232RLSSOP    SSOP28DB         SparkFun            (1070 1260)           R90
+U2       MCP73831       SOT23-5          SparkFun-PowerIC    (1730 1680)           R180
+U3       SPX3819-3.3    SOT23-5          microbuilder        (1240 1830)           R0
+X2       USB-SMD-NS     USB-MINIB-NOSTOP SparkFun            (754.70965 1759.08452) R0
