@@ -7,22 +7,22 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.003333" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.000123031496" altunitdist="mil" altunit="mil"/>
+<grid distance="0.003333" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.000123031496" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
@@ -34,11 +34,11 @@
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
-<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
-<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
@@ -46,7 +46,7 @@
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
@@ -3188,7 +3188,7 @@
 <rectangle x1="53.126209375" y1="48.55575625" x2="53.464028125" y2="48.64059375" layer="26"/>
 <rectangle x1="53.718028125" y1="48.55575625" x2="55.328390625" y2="48.64059375" layer="26"/>
 <rectangle x1="55.496028125" y1="48.55575625" x2="57.106390625" y2="48.64059375" layer="26"/>
-<text x="13.7992875" y="22.8577125" size="0.6096" layer="1" font="vector" rot="R90">Designed by @JayDi_</text>
+<text x="14.645871875" y="23.196346875" size="0.8128" layer="1" font="vector" ratio="18" rot="R90">Designed by @JayDi_</text>
 </plain>
 <libraries>
 <library name="SparkFun">
@@ -6358,15 +6358,16 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <contactref element="U1" pad="5"/>
 <contactref element="U$1" pad="TX"/>
 <contactref element="U$1" pad="TX@1"/>
-<wire x1="34.62390625" y1="31.57590625" x2="39.5094625" y2="31.57590625" width="0.254" layer="1"/>
-<wire x1="30.834" y1="30.379" x2="33.427" y2="30.379" width="0.254" layer="1"/>
-<wire x1="33.427" y1="30.379" x2="34.62390625" y2="31.57590625" width="0.254" layer="1"/>
 <wire x1="43.3194625" y1="34.11590625" x2="43.3194625" y2="34.9125375" width="0.3048" layer="1"/>
 <wire x1="43.3194625" y1="34.9125375" x2="42.672" y2="35.56" width="0.3048" layer="1"/>
 <wire x1="42.672" y1="35.56" x2="39.878" y2="35.56" width="0.3048" layer="1"/>
 <wire x1="39.4644" y1="35.1464" x2="39.878" y2="35.56" width="0.3048" layer="1"/>
-<wire x1="39.5094625" y1="31.57590625" x2="39.5094625" y2="35.1013375" width="0.3048" layer="1"/>
+<wire x1="39.5094625" y1="35.1013375" x2="39.5094625" y2="31.57590625" width="0.3048" layer="1"/>
 <wire x1="39.5094625" y1="35.1013375" x2="39.4644" y2="35.1464" width="0.3048" layer="1"/>
+<wire x1="33.861678125" y1="31.57590625" x2="32.59340625" y2="30.307634375" width="0.254" layer="1"/>
+<wire x1="32.59340625" y1="30.307634375" x2="30.905365625" y2="30.307634375" width="0.254" layer="1"/>
+<wire x1="30.905365625" y1="30.307634375" x2="30.834" y2="30.379" width="0.254" layer="1"/>
+<wire x1="39.5094625" y1="31.57590625" x2="33.861678125" y2="31.57590625" width="0.254" layer="1"/>
 </signal>
 <signal name="POWER">
 <contactref element="U1" pad="4"/>
