@@ -3188,7 +3188,7 @@
 <rectangle x1="53.126209375" y1="48.55575625" x2="53.464028125" y2="48.64059375" layer="26"/>
 <rectangle x1="53.718028125" y1="48.55575625" x2="55.328390625" y2="48.64059375" layer="26"/>
 <rectangle x1="55.496028125" y1="48.55575625" x2="57.106390625" y2="48.64059375" layer="26"/>
-<text x="14.39189375" y="23.619634375" size="0.6096" layer="1" font="vector" rot="R90">Designed by @JayDi_</text>
+<text x="14.645871875" y="23.196346875" size="0.8128" layer="1" font="vector" ratio="18" rot="R90">Designed by @JayDi_</text>
 </plain>
 <libraries>
 <library name="SparkFun">
