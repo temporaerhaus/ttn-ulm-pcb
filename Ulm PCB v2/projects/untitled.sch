@@ -13020,6 +13020,7 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <clearance class="0" value="0.254"/>
 </class>
 <class number="1" name="power" width="0.4064" drill="0.6">
+<clearance class="0" value="0.205"/>
 <clearance class="1" value="0.254"/>
 </class>
 </classes>
