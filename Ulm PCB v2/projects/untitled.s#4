@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.0.1">
+<eagle version="8.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -7399,7 +7399,6 @@ End launch SMA connector. The paste layer has been removed so that the connector
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
-<part name="J$1" library="_c2h" deviceset="ANTENNA" device="TINY"/>
 <part name="C8" library="microbuilder" deviceset="CAP_CERAMIC" device="0805-NOOUTLINE" value="10µF"/>
 <part name="C9" library="microbuilder" deviceset="CAP_CERAMIC" device="0603_NO" value="1uF"/>
 <part name="U$27" library="microbuilder" deviceset="GND" device=""/>
@@ -7414,6 +7413,7 @@ End launch SMA connector. The paste layer has been removed so that the connector
 <part name="D2" library="microbuilder" deviceset="DIODE-SCHOTTKY" device="SOD-123" value="MBR120"/>
 <part name="R4" library="microbuilder" deviceset="RESISTOR" device="_0603_NOOUT" value="100k"/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device="" value="3.3V"/>
+<part name="J$2" library="_c2h" deviceset="ANTENNA" device="TINY"/>
 </parts>
 <sheets>
 <sheet>
@@ -7468,7 +7468,6 @@ End launch SMA connector. The paste layer has been removed so that the connector
 <instance part="GND15" gate="1" x="104.14" y="416.56"/>
 <instance part="GND13" gate="1" x="93.98" y="383.54"/>
 <instance part="GND16" gate="1" x="114.3" y="398.78"/>
-<instance part="J$1" gate="1" x="121.92" y="426.72"/>
 <instance part="C8" gate="G$1" x="-154.94" y="403.86"/>
 <instance part="C9" gate="G$1" x="-109.22" y="403.86"/>
 <instance part="U$27" gate="G$1" x="-154.94" y="396.24"/>
@@ -7483,6 +7482,7 @@ End launch SMA connector. The paste layer has been removed so that the connector
 <instance part="D2" gate="G$1" x="-154.94" y="424.18" rot="R270"/>
 <instance part="R4" gate="G$1" x="-147.32" y="411.48" rot="R270"/>
 <instance part="+3V1" gate="G$1" x="-139.7" y="325.12" rot="MR0"/>
+<instance part="J$2" gate="1" x="121.92" y="426.72"/>
 </instances>
 <busses>
 <bus name="SCL,MISO,MOSI,CS,D4,D5,D6,D7">
@@ -7599,10 +7599,16 @@ End launch SMA connector. The paste layer has been removed so that the connector
 <segment>
 <wire x1="114.3" y1="408.94" x2="114.3" y2="401.32" width="0.1524" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
-<pinref part="J$1" gate="1" pin="GND@0"/>
-<pinref part="J$1" gate="1" pin="GND@3"/>
-<wire x1="119.38" y1="421.64" x2="119.38" y2="414.02" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="421.64" x2="119.38" y2="419.1" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="419.1" x2="119.38" y2="416.56" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="416.56" x2="119.38" y2="414.02" width="0.1524" layer="91"/>
 <wire x1="114.3" y1="408.94" x2="119.38" y2="414.02" width="0.1524" layer="91"/>
+<pinref part="J$2" gate="1" pin="GND@0"/>
+<pinref part="J$2" gate="1" pin="GND@1"/>
+<junction x="119.38" y="419.1"/>
+<pinref part="J$2" gate="1" pin="GND@2"/>
+<junction x="119.38" y="416.56"/>
+<pinref part="J$2" gate="1" pin="GND@3"/>
 <junction x="119.38" y="414.02"/>
 </segment>
 <segment>
@@ -7951,8 +7957,8 @@ End launch SMA connector. The paste layer has been removed so that the connector
 <pinref part="U$6" gate="G$1" pin="ANT"/>
 <wire x1="106.68" y1="401.32" x2="106.68" y2="403.86" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="403.86" x2="116.84" y2="414.02" width="0.1524" layer="91"/>
-<pinref part="J$1" gate="1" pin="SIGNAL"/>
 <wire x1="116.84" y1="426.72" x2="116.84" y2="414.02" width="0.1524" layer="91"/>
+<pinref part="J$2" gate="1" pin="SIGNAL"/>
 </segment>
 </net>
 <net name="VBAT" class="0">
