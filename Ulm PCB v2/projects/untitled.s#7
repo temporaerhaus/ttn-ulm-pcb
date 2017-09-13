@@ -7007,13 +7007,6 @@ End launch SMA connector. The paste layer has been removed so that the connector
 <junction x="-149.86" y="411.48"/>
 </segment>
 </net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="U$1" gate="G$1" pin="RST1"/>
-<wire x1="154.94" y1="408.94" x2="144.78" y2="408.94" width="0.1524" layer="91"/>
-<label x="144.78" y="408.94" size="1.778" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="N$9" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="DTR"/>
@@ -7046,6 +7039,11 @@ End launch SMA connector. The paste layer has been removed so that the connector
 <wire x1="-68.58" y1="220.98" x2="-60.96" y2="220.98" width="0.1524" layer="91"/>
 <label x="-66.04" y="220.98" size="1.778" layer="95"/>
 <pinref part="U1" gate="G$1" pin="DTR"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="RST1"/>
+<wire x1="154.94" y1="408.94" x2="144.78" y2="408.94" width="0.1524" layer="91"/>
+<label x="144.78" y="408.94" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="3.3V" class="1">
