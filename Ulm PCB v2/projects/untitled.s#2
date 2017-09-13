@@ -5155,36 +5155,6 @@ Source: AVX .. aphvc.pdf</description>
 </library>
 <library name="_c2h">
 <packages>
-<package name="RFM95">
-<wire x1="-10.23" y1="-8" x2="5.7775" y2="-8" width="0.127" layer="21"/>
-<wire x1="5.7775" y1="8" x2="-10.23" y2="8" width="0.127" layer="21"/>
-<wire x1="-7.3025" y1="0.9525" x2="-1.905" y2="0.9525" width="0.127" layer="21"/>
-<wire x1="-1.905" y1="0.9525" x2="-1.905" y2="6.0325" width="0.127" layer="21"/>
-<wire x1="-1.905" y1="6.0325" x2="-7.3025" y2="6.0325" width="0.127" layer="21"/>
-<wire x1="-7.3025" y1="6.0325" x2="-7.3025" y2="0.9525" width="0.127" layer="21"/>
-<wire x1="1.27" y1="5.3975" x2="1.27" y2="2.2225" width="0.127" layer="21"/>
-<wire x1="1.27" y1="2.2225" x2="3.4925" y2="2.2225" width="0.127" layer="21"/>
-<wire x1="3.4925" y1="2.2225" x2="3.4925" y2="5.3975" width="0.127" layer="21"/>
-<wire x1="3.4925" y1="5.3975" x2="1.27" y2="5.3975" width="0.127" layer="21"/>
-<smd name="ANT" x="5.7775" y="-7" dx="2" dy="1.27" layer="1"/>
-<smd name="DIO0" x="5.7775" y="3" dx="2" dy="1.27" layer="1"/>
-<smd name="DIO2" x="5.7795" y="7" dx="2" dy="1.27" layer="1" rot="R180"/>
-<smd name="GND" x="5.7775" y="-5" dx="2" dy="1.27" layer="1"/>
-<smd name="GND1" x="-10.2225" y="7" dx="2" dy="1.27" layer="1" rot="R180"/>
-<smd name="GND2" x="-10.23" y="-7" dx="2" dy="1.27" layer="1"/>
-<smd name="MISO" x="-10.23" y="5" dx="2" dy="1.27" layer="1"/>
-<smd name="MOSI" x="-10.2245" y="3" dx="2" dy="1.27" layer="1"/>
-<smd name="NSS" x="-10.2225" y="-1" dx="2" dy="1.27" layer="1" rot="R180"/>
-<smd name="SCK" x="-10.23" y="1.0122" dx="2" dy="1.27" layer="1"/>
-<smd name="VDD" x="5.7775" y="1" dx="2" dy="1.27" layer="1"/>
-<text x="-3.23" y="10.08" size="1.27" layer="25" font="vector" ratio="16">&gt;NAME</text>
-<text x="-3.31" y="8.65" size="1.27" layer="27" font="vector" ratio="16">&gt;VALUE</text>
-<text x="3.4015" y="0.2665" size="1.5" layer="21" ratio="15">+</text>
-<text x="3.7315" y="-7.503" size="0.889" layer="21" font="vector" ratio="20">A</text>
-<text x="3.465" y="-5.639" size="1.5" layer="21" ratio="15">-</text>
-<text x="-8.981" y="-7.671" size="1.5" layer="21" ratio="15">-</text>
-<text x="-8.981" y="6.299" size="1.5" layer="21" ratio="15">-</text>
-</package>
 <package name="SMA-EDGE">
 <description>&lt;b&gt;SMA Antenna Connector&lt;/b&gt;&lt;p&gt;
 This is a footprint for an edge mount RF antenna. Works pretty well with SMA type connectors but may also work with other edge mount RF connectors. Keep in mind, these edge mount connectors assume you are using a 0.062" PCB thickness.</description>
@@ -5300,22 +5270,6 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 </package>
 </packages>
 <symbols>
-<symbol name="RFM95">
-<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94"/>
-<wire x1="10.16" y1="10.16" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94"/>
-<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
-<pin name="ANT" x="12.7" y="0" visible="pin" length="short" direction="pas" rot="R180"/>
-<pin name="DIO0" x="-12.7" y="-7.62" visible="pin" length="short" direction="oc"/>
-<pin name="DIO2" x="12.7" y="-7.62" visible="pin" length="short" direction="oc" rot="R180"/>
-<pin name="GND" x="0" y="-15.24" visible="pad" length="short" direction="pwr" rot="R90"/>
-<pin name="MISO" x="-12.7" y="0" visible="pin" length="short" direction="in"/>
-<pin name="MOSI" x="-12.7" y="-2.54" visible="pin" length="short" direction="out"/>
-<pin name="SCK" x="-12.7" y="2.54" visible="pin" length="short" direction="in"/>
-<pin name="SEL" x="-12.7" y="5.08" visible="pin" length="short" direction="in"/>
-<pin name="VCC" x="0" y="12.7" visible="pad" length="short" direction="pwr" rot="R270"/>
-<text x="-9.144" y="7.62" size="1.778" layer="94">RFM92/95/96/98</text>
-</symbol>
 <symbol name="ANTENNA">
 <circle x="0" y="0" radius="1.1359" width="0.254" layer="94"/>
 <circle x="0" y="0" radius="2.54" width="0.254" layer="94"/>
@@ -5328,29 +5282,6 @@ This is a footprint for an edge mount RF antenna. Works pretty well with SMA typ
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="RFM95">
-<gates>
-<gate name="G$1" symbol="RFM95" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="RFM95">
-<connects>
-<connect gate="G$1" pin="ANT" pad="ANT"/>
-<connect gate="G$1" pin="DIO0" pad="DIO0"/>
-<connect gate="G$1" pin="DIO2" pad="DIO2"/>
-<connect gate="G$1" pin="GND" pad="GND GND1 GND2"/>
-<connect gate="G$1" pin="MISO" pad="MISO"/>
-<connect gate="G$1" pin="MOSI" pad="MOSI"/>
-<connect gate="G$1" pin="SCK" pad="SCK"/>
-<connect gate="G$1" pin="SEL" pad="NSS"/>
-<connect gate="G$1" pin="VCC" pad="VDD"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="ANTENNA" prefix="J$">
 <description>&lt;b&gt;SMA Antenna Connector&lt;/b&gt;
 End launch SMA connector. The paste layer has been removed so that the connector can be hand soldered onto the board after reflow.</description>
@@ -5827,6 +5758,84 @@ End launch SMA connector. The paste layer has been removed so that the connector
 </polygon>
 <rectangle x1="-1.6" y1="2" x2="1.6" y2="2.4" layer="51"/>
 </package>
+<package name="RFM69HCW">
+<wire x1="-8" y1="8" x2="8" y2="8" width="0.127" layer="51"/>
+<wire x1="8" y1="8" x2="8" y2="-8" width="0.127" layer="51"/>
+<wire x1="8" y1="-8" x2="-8" y2="-8" width="0.127" layer="51"/>
+<wire x1="-8" y1="-8" x2="-8" y2="8" width="0.127" layer="51"/>
+<pad name="1" x="6.8" y="-7" drill="0.4" shape="offset"/>
+<smd name="1P" x="8.1" y="-7" dx="2" dy="0.8" layer="1" rot="R180"/>
+<pad name="2" x="6.8" y="-5" drill="0.4" shape="offset"/>
+<smd name="2P" x="8.1" y="-5" dx="2" dy="0.8" layer="1" rot="R180"/>
+<pad name="3" x="6.8" y="-3" drill="0.4" shape="offset"/>
+<smd name="3P" x="8.1" y="-3" dx="2" dy="0.8" layer="1" rot="R180"/>
+<pad name="4" x="6.8" y="-1" drill="0.4" shape="offset"/>
+<smd name="4P" x="8.1" y="-1" dx="2" dy="0.8" layer="1" rot="R180"/>
+<pad name="5" x="6.8" y="1" drill="0.4" shape="offset"/>
+<smd name="5P" x="8.1" y="1" dx="2" dy="0.8" layer="1" rot="R180"/>
+<pad name="6" x="6.8" y="3" drill="0.4" shape="offset"/>
+<smd name="6P" x="8.1" y="3" dx="2" dy="0.8" layer="1" rot="R180"/>
+<pad name="7" x="6.8" y="5" drill="0.4" shape="offset"/>
+<smd name="7P" x="8.1" y="5" dx="2" dy="0.8" layer="1" rot="R180"/>
+<wire x1="-8.1" y1="7.7" x2="-8.1" y2="8.1" width="0.127" layer="21"/>
+<wire x1="-8.1" y1="8.1" x2="8.1" y2="8.1" width="0.127" layer="21"/>
+<wire x1="8.1" y1="8.1" x2="8.1" y2="7.7" width="0.127" layer="21"/>
+<wire x1="-8.1" y1="-7.7" x2="-8.1" y2="-8.1" width="0.127" layer="21"/>
+<wire x1="-8.1" y1="-8.1" x2="8.1" y2="-8.1" width="0.127" layer="21"/>
+<wire x1="8.1" y1="-8.1" x2="8.1" y2="-7.7" width="0.127" layer="21"/>
+<text x="-8" y="8.5" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-8.1" y="-8.7" size="0.4064" layer="25" ratio="10">&gt;VALUE</text>
+<pad name="8" x="6.8" y="7" drill="0.4" shape="offset"/>
+<smd name="8P" x="8.1" y="7" dx="2" dy="0.8" layer="1" rot="R180"/>
+<pad name="9" x="-6.8" y="7" drill="0.4" shape="offset" rot="R180"/>
+<smd name="9P" x="-8.1" y="7" dx="2" dy="0.8" layer="1"/>
+<pad name="10" x="-6.8" y="5" drill="0.4" shape="offset" rot="R180"/>
+<smd name="10P" x="-8.1" y="5" dx="2" dy="0.8" layer="1"/>
+<pad name="11" x="-6.8" y="3" drill="0.4" shape="offset" rot="R180"/>
+<smd name="11P" x="-8.1" y="3" dx="2" dy="0.8" layer="1"/>
+<pad name="12" x="-6.8" y="1" drill="0.4" shape="offset" rot="R180"/>
+<smd name="12P" x="-8.1" y="1" dx="2" dy="0.8" layer="1"/>
+<pad name="13" x="-6.8" y="-1" drill="0.4" shape="offset" rot="R180"/>
+<smd name="13P" x="-8.1" y="-1" dx="2" dy="0.8" layer="1"/>
+<pad name="14" x="-6.8" y="-3" drill="0.4" shape="offset" rot="R180"/>
+<smd name="14P" x="-8.1" y="-3" dx="2" dy="0.8" layer="1"/>
+<pad name="15" x="-6.8" y="-5" drill="0.4" shape="offset" rot="R180"/>
+<smd name="15P" x="-8.1" y="-5" dx="2" dy="0.8" layer="1"/>
+<pad name="16" x="-6.8" y="-7" drill="0.4" shape="offset" rot="R180"/>
+<smd name="16P" x="-8.1" y="-7" dx="2" dy="0.8" layer="1"/>
+<circle x="10.1" y="-7" radius="0.3" width="0.6096" layer="21"/>
+</package>
+<package name="RFMHCW_SMT">
+<wire x1="-8" y1="8" x2="8" y2="8" width="0.127" layer="51"/>
+<wire x1="8" y1="8" x2="8" y2="-8" width="0.127" layer="51"/>
+<wire x1="8" y1="-8" x2="-8" y2="-8" width="0.127" layer="51"/>
+<wire x1="-8" y1="-8" x2="-8" y2="8" width="0.127" layer="51"/>
+<smd name="1P" x="8.1" y="-7" dx="2" dy="0.8" layer="1" rot="R180"/>
+<smd name="2P" x="8.1" y="-5" dx="2" dy="0.8" layer="1" rot="R180"/>
+<smd name="3P" x="8.1" y="-3" dx="2" dy="0.8" layer="1" rot="R180"/>
+<smd name="4P" x="8.1" y="-1" dx="2" dy="0.8" layer="1" rot="R180"/>
+<smd name="5P" x="8.1" y="1" dx="2" dy="0.8" layer="1" rot="R180"/>
+<smd name="6P" x="8.1" y="3" dx="2" dy="0.8" layer="1" rot="R180"/>
+<smd name="7P" x="8.1" y="5" dx="2" dy="0.8" layer="1" rot="R180"/>
+<wire x1="-8.1" y1="7.7" x2="-8.1" y2="8.1" width="0.127" layer="21"/>
+<wire x1="-8.1" y1="8.1" x2="8.1" y2="8.1" width="0.127" layer="21"/>
+<wire x1="8.1" y1="8.1" x2="8.1" y2="7.7" width="0.127" layer="21"/>
+<wire x1="-8.1" y1="-7.7" x2="-8.1" y2="-8.1" width="0.127" layer="21"/>
+<wire x1="-8.1" y1="-8.1" x2="8.1" y2="-8.1" width="0.127" layer="21"/>
+<wire x1="8.1" y1="-8.1" x2="8.1" y2="-7.7" width="0.127" layer="21"/>
+<text x="-8" y="8.5" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-8.1" y="-8.7" size="0.4064" layer="25" ratio="10">&gt;VALUE</text>
+<smd name="8P" x="8.1" y="7" dx="2" dy="0.8" layer="1" rot="R180"/>
+<smd name="9P" x="-8.1" y="7" dx="2" dy="0.8" layer="1"/>
+<smd name="10P" x="-8.1" y="5" dx="2" dy="0.8" layer="1"/>
+<smd name="11P" x="-8.1" y="3" dx="2" dy="0.8" layer="1"/>
+<smd name="12P" x="-8.1" y="1" dx="2" dy="0.8" layer="1"/>
+<smd name="13P" x="-8.1" y="-1" dx="2" dy="0.8" layer="1"/>
+<smd name="14P" x="-8.1" y="-3" dx="2" dy="0.8" layer="1"/>
+<smd name="15P" x="-8.1" y="-5" dx="2" dy="0.8" layer="1"/>
+<smd name="16P" x="-8.1" y="-7" dx="2" dy="0.8" layer="1"/>
+<circle x="10.1" y="-7" radius="0.3" width="0.6096" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="GND">
@@ -5881,6 +5890,40 @@ End launch SMA connector. The paste layer has been removed so that the connector
 <pin name="C" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 <wire x1="1.27" y1="-1.27" x2="1.778" y2="-1.27" width="0.254" layer="94"/>
 <wire x1="1.27" y1="1.27" x2="0.762" y2="1.27" width="0.254" layer="94"/>
+</symbol>
+<symbol name="RFM69HCW">
+<pin name="MISO" x="-12.7" y="5.08" length="short" direction="out"/>
+<pin name="DIO0" x="12.7" y="2.54" length="short" rot="R180"/>
+<pin name="DIO2" x="12.7" y="7.62" length="short" rot="R180"/>
+<pin name="DIO1" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="DIO5" x="-12.7" y="-7.62" length="short"/>
+<pin name="RESET" x="-12.7" y="-5.08" length="short" direction="in"/>
+<pin name="GND@3" x="-12.7" y="-10.16" length="short" direction="pwr"/>
+<pin name="ANT" x="12.7" y="-10.16" length="short" rot="R180"/>
+<pin name="GND@1" x="12.7" y="-7.62" length="short" direction="pwr" rot="R180"/>
+<pin name="DIO3" x="12.7" y="-5.08" length="short" rot="R180"/>
+<pin name="MOSI" x="-12.7" y="2.54" length="short" direction="in"/>
+<pin name="SCK" x="-12.7" y="0" length="short" direction="in"/>
+<pin name="NSS" x="-12.7" y="-2.54" length="short" direction="in"/>
+<wire x1="-10.16" y1="10.16" x2="10.16" y2="10.16" width="0.254" layer="94" style="shortdash"/>
+<wire x1="10.16" y1="10.16" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="10.16" width="0.254" layer="94"/>
+<text x="-10.16" y="17.78" size="1.27" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-20.32" size="1.27" layer="95">&gt;VALUE</text>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="10.16" y2="15.24" width="0.254" layer="94"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-12.7" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="10.16" y2="-12.7" width="0.254" layer="94"/>
+<text x="0" y="12.7" size="1.27" layer="94" align="center">RFM69HCW
+ISM BAND RADIO</text>
+<text x="0" y="-15.24" size="1.27" layer="94" align="center">VDD: 1.8-3.6V
+Temp: -40~+85°C</text>
+<pin name="DIO4" x="12.7" y="-2.54" length="short" rot="R180"/>
+<pin name="VDD" x="12.7" y="0" length="short" direction="pwr" rot="R180"/>
+<pin name="GND@2" x="-12.7" y="7.62" length="short" direction="pwr"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6334,6 +6377,60 @@ End launch SMA connector. The paste layer has been removed so that the connector
 <connects>
 <connect gate="G$1" pin="A" pad="A1 A2"/>
 <connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RFM69HCW" prefix="U" uservalue="yes">
+<description>&lt;p&gt;&lt;b&gt;RFM69HCW - ISM Band RF Transceiver&lt;/b&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="RFM69HCW" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RFM69HCW">
+<connects>
+<connect gate="G$1" pin="ANT" pad="1 1P"/>
+<connect gate="G$1" pin="DIO0" pad="6 6P"/>
+<connect gate="G$1" pin="DIO1" pad="7 7P"/>
+<connect gate="G$1" pin="DIO2" pad="8 8P"/>
+<connect gate="G$1" pin="DIO3" pad="3 3P"/>
+<connect gate="G$1" pin="DIO4" pad="4 4P"/>
+<connect gate="G$1" pin="DIO5" pad="15 15P"/>
+<connect gate="G$1" pin="GND@1" pad="2 2P"/>
+<connect gate="G$1" pin="GND@2" pad="9 9P"/>
+<connect gate="G$1" pin="GND@3" pad="16 16P"/>
+<connect gate="G$1" pin="MISO" pad="10 10P"/>
+<connect gate="G$1" pin="MOSI" pad="11 11P"/>
+<connect gate="G$1" pin="NSS" pad="13 13P"/>
+<connect gate="G$1" pin="RESET" pad="14 14P"/>
+<connect gate="G$1" pin="SCK" pad="12 12P"/>
+<connect gate="G$1" pin="VDD" pad="5 5P"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SMT" package="RFMHCW_SMT">
+<connects>
+<connect gate="G$1" pin="ANT" pad="1P"/>
+<connect gate="G$1" pin="DIO0" pad="6P"/>
+<connect gate="G$1" pin="DIO1" pad="7P"/>
+<connect gate="G$1" pin="DIO2" pad="8P"/>
+<connect gate="G$1" pin="DIO3" pad="3P"/>
+<connect gate="G$1" pin="DIO4" pad="4P"/>
+<connect gate="G$1" pin="DIO5" pad="15P"/>
+<connect gate="G$1" pin="GND@1" pad="2P"/>
+<connect gate="G$1" pin="GND@2" pad="9P"/>
+<connect gate="G$1" pin="GND@3" pad="16P"/>
+<connect gate="G$1" pin="MISO" pad="10P"/>
+<connect gate="G$1" pin="MOSI" pad="11P"/>
+<connect gate="G$1" pin="NSS" pad="13P"/>
+<connect gate="G$1" pin="RESET" pad="14P"/>
+<connect gate="G$1" pin="SCK" pad="12P"/>
+<connect gate="G$1" pin="VDD" pad="5P"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -13059,7 +13156,6 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="C6" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0805" value="100n"/>
 <part name="C7" library="rcl" deviceset="C-EU" device="C0805" value="100n"/>
-<part name="U$6" library="_c2h" deviceset="RFM95" device=""/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
@@ -13078,6 +13174,11 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <part name="R4" library="microbuilder" deviceset="RESISTOR" device="_0603_NOOUT" value="100k"/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device="" value="3.3V"/>
 <part name="J$2" library="_c2h" deviceset="ANTENNA" device="TINY"/>
+<part name="U4" library="microbuilder" deviceset="RFM69HCW" device="_SMT" value="RFM69HCW"/>
+<part name="GND1" library="supply1" deviceset="GND" device=""/>
+<part name="GND10" library="supply1" deviceset="GND" device=""/>
+<part name="P+2" library="supply1" deviceset="VCC" device=""/>
+<part name="P+4" library="supply1" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13091,6 +13192,7 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <wire x1="22.86" y1="335.28" x2="213.36" y2="335.28" width="0.1524" layer="94"/>
 <wire x1="22.86" y1="335.28" x2="22.86" y2="436.88" width="0.1524" layer="94"/>
 <text x="165.1" y="337.82" size="6.4516" layer="94">MCU + RFM</text>
+<text x="27.94" y="327.66" size="5.08" layer="94">RFM</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="170.18" y="403.86"/>
@@ -13125,10 +13227,9 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <instance part="J2" gate="G$1" x="5.08" y="312.42" rot="R270"/>
 <instance part="GND9" gate="1" x="-2.54" y="284.48"/>
 <instance part="P+3" gate="VCC" x="104.14" y="434.34"/>
-<instance part="C6" gate="G$1" x="104.14" y="424.18"/>
+<instance part="C6" gate="G$1" x="121.92" y="297.18"/>
 <instance part="C7" gate="G$1" x="200.66" y="414.02"/>
-<instance part="U$6" gate="G$1" x="93.98" y="401.32"/>
-<instance part="GND15" gate="1" x="104.14" y="416.56"/>
+<instance part="GND15" gate="1" x="121.92" y="289.56"/>
 <instance part="GND13" gate="1" x="93.98" y="383.54"/>
 <instance part="GND16" gate="1" x="114.3" y="398.78"/>
 <instance part="C8" gate="G$1" x="-154.94" y="403.86"/>
@@ -13146,15 +13247,17 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <instance part="R4" gate="G$1" x="-147.32" y="411.48" rot="R270"/>
 <instance part="+3V1" gate="G$1" x="-139.7" y="325.12" rot="MR0"/>
 <instance part="J$2" gate="1" x="121.92" y="426.72"/>
+<instance part="U4" gate="G$1" x="83.82" y="299.72"/>
+<instance part="GND1" gate="1" x="50.8" y="279.4"/>
+<instance part="GND10" gate="1" x="111.76" y="279.4"/>
+<instance part="P+2" gate="VCC" x="104.14" y="434.34"/>
+<instance part="P+4" gate="VCC" x="121.92" y="320.04"/>
 </instances>
 <busses>
 <bus name="SCL,MISO,MOSI,CS,D4,D5,D6,D7">
 <segment>
 <wire x1="208.28" y1="391.16" x2="208.28" y2="358.14" width="0.762" layer="92"/>
-<wire x1="208.28" y1="358.14" x2="124.46" y2="358.14" width="0.762" layer="92"/>
-<wire x1="124.46" y1="358.14" x2="124.46" y2="421.64" width="0.762" layer="92"/>
-<wire x1="124.46" y1="358.14" x2="60.96" y2="358.14" width="0.762" layer="92"/>
-<wire x1="60.96" y1="358.14" x2="60.96" y2="421.64" width="0.762" layer="92"/>
+<wire x1="208.28" y1="358.14" x2="129.54" y2="358.14" width="0.762" layer="92"/>
 </segment>
 </bus>
 </busses>
@@ -13231,10 +13334,6 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <pinref part="GND15" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="G$1" pin="GND"/>
-<pinref part="GND13" gate="1" pin="GND"/>
-</segment>
-<segment>
 <wire x1="114.3" y1="408.94" x2="114.3" y2="401.32" width="0.1524" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
 <wire x1="119.38" y1="421.64" x2="119.38" y2="419.1" width="0.1524" layer="91"/>
@@ -13265,6 +13364,16 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <pinref part="U3" gate="G$1" pin="GND"/>
 <wire x1="-139.7" y1="411.48" x2="-139.7" y2="398.78" width="0.1524" layer="91"/>
 <pinref part="U$30" gate="G$1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="GND@2"/>
+<wire x1="71.12" y1="307.34" x2="50.8" y2="307.34" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="307.34" x2="50.8" y2="289.56" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="GND@3"/>
+<wire x1="50.8" y1="289.56" x2="50.8" y2="281.94" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="289.56" x2="50.8" y2="289.56" width="0.1524" layer="91"/>
+<junction x="50.8" y="289.56"/>
+<pinref part="GND1" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="USB_D-" class="0">
@@ -13309,15 +13418,8 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <junction x="200.66" y="416.56"/>
 </segment>
 <segment>
-<wire x1="88.9" y1="426.72" x2="93.98" y2="426.72" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
-<pinref part="C6" gate="G$1" pin="1"/>
-<wire x1="93.98" y1="426.72" x2="104.14" y2="426.72" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="426.72" x2="104.14" y2="431.8" width="0.1524" layer="91"/>
-<junction x="104.14" y="426.72"/>
-<pinref part="U$6" gate="G$1" pin="VCC"/>
-<wire x1="93.98" y1="414.02" x2="93.98" y2="426.72" width="0.1524" layer="91"/>
-<junction x="93.98" y="426.72"/>
+<pinref part="P+2" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
 <wire x1="-119.38" y1="416.56" x2="-116.84" y2="416.56" width="0.1524" layer="91"/>
@@ -13457,10 +13559,9 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <wire x1="203.2" y1="393.7" x2="208.28" y2="388.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="G$1" pin="SCK"/>
-<wire x1="81.28" y1="403.86" x2="66.04" y2="403.86" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="403.86" x2="60.96" y2="398.78" width="0.1524" layer="91"/>
-<label x="66.04" y="403.86" size="1.778" layer="95"/>
+<pinref part="U4" gate="G$1" pin="SCK"/>
+<wire x1="71.12" y1="299.72" x2="55.88" y2="299.72" width="0.1524" layer="91"/>
+<label x="55.88" y="299.72" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MISO" class="0">
@@ -13471,10 +13572,9 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <wire x1="203.2" y1="391.16" x2="208.28" y2="386.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="G$1" pin="MISO"/>
-<wire x1="81.28" y1="401.32" x2="66.04" y2="401.32" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="401.32" x2="60.96" y2="396.24" width="0.1524" layer="91"/>
-<label x="66.04" y="401.32" size="1.778" layer="95"/>
+<pinref part="U4" gate="G$1" pin="MISO"/>
+<wire x1="71.12" y1="304.8" x2="55.88" y2="304.8" width="0.1524" layer="91"/>
+<label x="55.88" y="304.8" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MOSI" class="0">
@@ -13485,10 +13585,9 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <wire x1="203.2" y1="388.62" x2="208.28" y2="383.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="G$1" pin="MOSI"/>
-<wire x1="81.28" y1="398.78" x2="66.04" y2="398.78" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="398.78" x2="60.96" y2="393.7" width="0.1524" layer="91"/>
-<label x="66.04" y="398.78" size="1.778" layer="95"/>
+<pinref part="U4" gate="G$1" pin="MOSI"/>
+<wire x1="71.12" y1="302.26" x2="60.96" y2="302.26" width="0.1524" layer="91"/>
+<label x="60.96" y="302.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CS" class="0">
@@ -13499,10 +13598,9 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <wire x1="203.2" y1="386.08" x2="208.28" y2="381" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="G$1" pin="SEL"/>
-<wire x1="81.28" y1="406.4" x2="66.04" y2="406.4" width="0.1524" layer="91"/>
-<wire x1="66.04" y1="406.4" x2="60.96" y2="401.32" width="0.1524" layer="91"/>
-<label x="66.04" y="406.4" size="1.778" layer="95"/>
+<pinref part="U4" gate="G$1" pin="NSS"/>
+<wire x1="71.12" y1="297.18" x2="60.96" y2="297.18" width="0.1524" layer="91"/>
+<label x="60.96" y="297.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="LOL" class="0">
@@ -13546,6 +13644,11 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <wire x1="154.94" y1="398.78" x2="127" y2="398.78" width="0.1524" layer="91"/>
 <wire x1="127" y1="398.78" x2="124.46" y2="393.7" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="DIO1"/>
+<wire x1="96.52" y1="304.8" x2="106.68" y2="304.8" width="0.1524" layer="91"/>
+<label x="101.6" y="304.8" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="D4" class="0">
 <segment>
@@ -13555,10 +13658,9 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <wire x1="127" y1="401.32" x2="124.46" y2="396.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="G$1" pin="DIO2"/>
-<wire x1="106.68" y1="393.7" x2="116.84" y2="393.7" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="393.7" x2="124.46" y2="386.08" width="0.1524" layer="91"/>
-<label x="114.3" y="393.7" size="1.778" layer="95"/>
+<pinref part="U4" gate="G$1" pin="DIO0"/>
+<wire x1="96.52" y1="302.26" x2="111.76" y2="302.26" width="0.1524" layer="91"/>
+<label x="106.68" y="302.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="D6" class="0">
@@ -13569,15 +13671,13 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <wire x1="127" y1="396.24" x2="124.46" y2="391.16" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$6" gate="G$1" pin="DIO0"/>
-<wire x1="81.28" y1="393.7" x2="63.5" y2="393.7" width="0.1524" layer="91"/>
-<wire x1="63.5" y1="393.7" x2="60.96" y2="391.16" width="0.1524" layer="91"/>
-<label x="63.5" y="393.7" size="1.778" layer="95"/>
+<pinref part="U4" gate="G$1" pin="DIO2"/>
+<wire x1="96.52" y1="307.34" x2="111.76" y2="307.34" width="0.1524" layer="91"/>
+<label x="109.22" y="307.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$4" class="0">
 <segment>
-<pinref part="U$6" gate="G$1" pin="ANT"/>
 <wire x1="106.68" y1="401.32" x2="106.68" y2="403.86" width="0.1524" layer="91"/>
 <wire x1="106.68" y1="403.86" x2="116.84" y2="414.02" width="0.1524" layer="91"/>
 <wire x1="116.84" y1="426.72" x2="116.84" y2="414.02" width="0.1524" layer="91"/>
@@ -13627,6 +13727,33 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="GND@1"/>
+<wire x1="96.52" y1="292.1" x2="111.76" y2="292.1" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="292.1" x2="111.76" y2="281.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="VCC" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="VDD"/>
+<wire x1="96.52" y1="299.72" x2="121.92" y2="299.72" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="299.72" x2="121.92" y2="317.5" width="0.1524" layer="91"/>
+<pinref part="P+4" gate="VCC" pin="VCC"/>
+</segment>
+</net>
+<net name="D2" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="D2"/>
+<wire x1="154.94" y1="406.4" x2="139.7" y2="406.4" width="0.1524" layer="91"/>
+<label x="142.24" y="406.4" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="RESET"/>
+<wire x1="71.12" y1="294.64" x2="55.88" y2="294.64" width="0.1524" layer="91"/>
+<label x="55.88" y="294.64" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
@@ -13638,6 +13765,10 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 </schematic>
 </drawing>
 <compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
 <note version="8.2" severity="warning">
 Since Version 8.2, EAGLE supports online libraries. The ids
 of those online libraries will not be understood (or retained)

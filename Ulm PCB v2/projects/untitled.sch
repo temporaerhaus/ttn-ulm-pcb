@@ -186,12 +186,6 @@
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="+5V">
-<wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
-<text x="-2.54" y="-5.08" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="VCC">
 <wire x1="1.27" y1="-1.905" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="-1.27" y2="-1.905" width="0.254" layer="94"/>
@@ -210,19 +204,6 @@
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="GND" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="+5V" prefix="P+">
-<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
-<gates>
-<gate name="1" symbol="+5V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -5853,12 +5834,6 @@ End launch SMA connector. The paste layer has been removed so that the connector
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
-<symbol name="VBUS">
-<text x="-1.524" y="1.016" size="1.27" layer="96">&gt;VALUE</text>
-<pin name="VBUS" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-<wire x1="-1.27" y1="-1.27" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="1.27" y2="-1.27" width="0.254" layer="94"/>
-</symbol>
 <symbol name="VBAT">
 <text x="-1.524" y="1.016" size="1.27" layer="96">&gt;VALUE</text>
 <pin name="VBAT" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
@@ -6083,19 +6058,6 @@ Temp: -40~+85°C</text>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="VBUS">
-<description>&lt;p&gt;VBUS Supply Symbole&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="VBUS" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
 <technologies>
 <technology name=""/>
 </technologies>
@@ -13140,7 +13102,6 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <part name="LED1" library="SparkFun" deviceset="LED" device="0603" value="Red"/>
 <part name="LED2" library="SparkFun" deviceset="LED" device="0603" value="Green"/>
 <part name="3.3V" library="SparkFun" deviceset="5V" device="" value="3.3V"/>
-<part name="U$3" library="SparkFun" deviceset="5V" device=""/>
 <part name="U$4" library="SparkFun" deviceset="5V" device="" value="3.3V"/>
 <part name="U2" library="SparkFun-PowerIC" deviceset="MCP73831" device=""/>
 <part name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="330"/>
@@ -13149,7 +13110,6 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <part name="R-PROG2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="R-EU_" device="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k"/>
 <part name="GND14" library="SparkFun" deviceset="GND" device=""/>
 <part name="FRAME1" library="frames" deviceset="A3L-LOC" device=""/>
-<part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="LED5" library="SparkFun" deviceset="LED" device="0603" value="Green"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="JST_2MM_MALE" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
@@ -13167,7 +13127,6 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <part name="U$29" library="microbuilder" deviceset="GND" device=""/>
 <part name="U$30" library="microbuilder" deviceset="GND" device=""/>
 <part name="+3V4" library="supply1" deviceset="+3V3" device="" value="3.3V"/>
-<part name="5V" library="microbuilder" deviceset="VBUS" device="" value="5V"/>
 <part name="VBAT" library="microbuilder" deviceset="VBAT" device=""/>
 <part name="U3" library="microbuilder" deviceset="VREG_SOT23-5" device="" value="SPX3819-3.3"/>
 <part name="D2" library="microbuilder" deviceset="DIODE-SCHOTTKY" device="SOD-123" value="MBR120"/>
@@ -13179,6 +13138,7 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
+<part name="D3" library="microbuilder" deviceset="DIODE-SCHOTTKY" device="SOD-123" value="MBR120"/>
 </parts>
 <sheets>
 <sheet>
@@ -13213,7 +13173,6 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <instance part="LED1" gate="G$1" x="-53.34" y="215.9"/>
 <instance part="LED2" gate="G$1" x="-43.18" y="215.9"/>
 <instance part="3.3V" gate="G$1" x="-53.34" y="233.68"/>
-<instance part="U$3" gate="G$1" x="-114.3" y="238.76"/>
 <instance part="U$4" gate="G$1" x="-43.18" y="233.68"/>
 <instance part="U2" gate="G$1" x="-86.36" y="307.34"/>
 <instance part="R3" gate="G$1" x="-106.68" y="299.72"/>
@@ -13222,7 +13181,6 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <instance part="R-PROG2" gate="G$1" x="-48.26" y="287.02" rot="R90"/>
 <instance part="GND14" gate="1" x="-48.26" y="276.86"/>
 <instance part="FRAME1" gate="G$1" x="-170.18" y="180.34"/>
-<instance part="P+1" gate="1" x="-160.02" y="322.58"/>
 <instance part="LED5" gate="G$1" x="-132.08" y="299.72" rot="R90"/>
 <instance part="J2" gate="G$1" x="5.08" y="312.42" rot="R270"/>
 <instance part="GND9" gate="1" x="-2.54" y="284.48"/>
@@ -13240,7 +13198,6 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <instance part="U$29" gate="G$1" x="-116.84" y="396.24"/>
 <instance part="U$30" gate="G$1" x="-139.7" y="396.24"/>
 <instance part="+3V4" gate="G$1" x="-109.22" y="429.26" rot="MR0"/>
-<instance part="5V" gate="G$1" x="-160.02" y="429.26"/>
 <instance part="VBAT" gate="G$1" x="-154.94" y="429.26"/>
 <instance part="U3" gate="G$1" x="-129.54" y="414.02"/>
 <instance part="D2" gate="G$1" x="-154.94" y="424.18" rot="R270"/>
@@ -13252,6 +13209,7 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <instance part="GND10" gate="1" x="111.76" y="279.4"/>
 <instance part="P+2" gate="VCC" x="104.14" y="434.34"/>
 <instance part="P+4" gate="VCC" x="121.92" y="320.04"/>
+<instance part="D3" gate="G$1" x="-160.02" y="429.26" rot="R270"/>
 </instances>
 <busses>
 <bus name="SCL,MISO,MOSI,CS,D4,D5,D6,D7">
@@ -13506,51 +13464,6 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <pinref part="U1" gate="G$1" pin="VCCIO"/>
 </segment>
 </net>
-<net name="5V" class="0">
-<segment>
-<wire x1="-142.24" y1="236.22" x2="-132.08" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="-132.08" y1="236.22" x2="-114.3" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="236.22" x2="-114.3" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="226.06" x2="-99.06" y2="226.06" width="0.1524" layer="91"/>
-<wire x1="-132.08" y1="220.98" x2="-132.08" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="-142.24" y1="218.44" x2="-142.24" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="-154.94" y1="236.22" x2="-142.24" y2="236.22" width="0.1524" layer="91"/>
-<wire x1="-114.3" y1="238.76" x2="-114.3" y2="236.22" width="0.1524" layer="91"/>
-<junction x="-132.08" y="236.22"/>
-<junction x="-142.24" y="236.22"/>
-<junction x="-114.3" y="236.22"/>
-<label x="-109.22" y="226.06" size="1.778" layer="95"/>
-<pinref part="U1" gate="G$1" pin="VCC"/>
-<pinref part="C5" gate="G$1" pin="+"/>
-<pinref part="C2" gate="G$1" pin="1"/>
-<pinref part="X2" gate="G$1" pin="VBUS"/>
-<pinref part="U$3" gate="G$1" pin="5V"/>
-</segment>
-<segment>
-<wire x1="-160.02" y1="312.42" x2="-160.02" y2="320.04" width="0.1524" layer="91"/>
-<label x="-157.48" y="320.04" size="1.778" layer="95"/>
-<pinref part="P+1" gate="1" pin="+5V"/>
-<wire x1="-160.02" y1="312.42" x2="-99.06" y2="312.42" width="0.1524" layer="91"/>
-<wire x1="-96.52" y1="309.88" x2="-99.06" y2="309.88" width="0.1524" layer="91"/>
-<wire x1="-99.06" y1="309.88" x2="-99.06" y2="312.42" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="VIN"/>
-</segment>
-<segment>
-<pinref part="5V" gate="G$1" pin="VBUS"/>
-<junction x="-154.94" y="416.56"/>
-<pinref part="C8" gate="G$1" pin="1"/>
-<wire x1="-139.7" y1="416.56" x2="-147.32" y2="416.56" width="0.1524" layer="91"/>
-<wire x1="-147.32" y1="416.56" x2="-154.94" y2="416.56" width="0.1524" layer="91"/>
-<wire x1="-154.94" y1="416.56" x2="-154.94" y2="406.4" width="0.1524" layer="91"/>
-<wire x1="-154.94" y1="421.64" x2="-154.94" y2="416.56" width="0.1524" layer="91"/>
-<pinref part="U3" gate="G$1" pin="IN"/>
-<pinref part="D2" gate="G$1" pin="C"/>
-<wire x1="-160.02" y1="426.72" x2="-160.02" y2="416.56" width="0.1524" layer="91"/>
-<wire x1="-160.02" y1="416.56" x2="-154.94" y2="416.56" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-<junction x="-147.32" y="416.56"/>
-</segment>
-</net>
 <net name="SCL" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="D13"/>
@@ -13756,6 +13669,54 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <pinref part="J$2" gate="1" pin="SIGNAL"/>
 <wire x1="160.02" y1="309.88" x2="139.7" y2="309.88" width="0.1524" layer="91"/>
 <label x="139.7" y="309.88" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="VBUS" class="0">
+<segment>
+<wire x1="-142.24" y1="236.22" x2="-132.08" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="236.22" x2="-114.3" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="236.22" x2="-114.3" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="226.06" x2="-99.06" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="-132.08" y1="220.98" x2="-132.08" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="-142.24" y1="218.44" x2="-142.24" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="236.22" x2="-142.24" y2="236.22" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="238.76" x2="-114.3" y2="236.22" width="0.1524" layer="91"/>
+<junction x="-132.08" y="236.22"/>
+<junction x="-142.24" y="236.22"/>
+<junction x="-114.3" y="236.22"/>
+<label x="-109.22" y="226.06" size="1.778" layer="95"/>
+<pinref part="U1" gate="G$1" pin="VCC"/>
+<pinref part="C5" gate="G$1" pin="+"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<pinref part="X2" gate="G$1" pin="VBUS"/>
+</segment>
+<segment>
+<pinref part="D3" gate="G$1" pin="A"/>
+<wire x1="-160.02" y1="431.8" x2="-160.02" y2="434.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="V5" class="0">
+<segment>
+<wire x1="-160.02" y1="312.42" x2="-160.02" y2="320.04" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="312.42" x2="-99.06" y2="312.42" width="0.1524" layer="91"/>
+<wire x1="-96.52" y1="309.88" x2="-99.06" y2="309.88" width="0.1524" layer="91"/>
+<wire x1="-99.06" y1="309.88" x2="-99.06" y2="312.42" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="VIN"/>
+</segment>
+<segment>
+<junction x="-154.94" y="416.56"/>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="-139.7" y1="416.56" x2="-147.32" y2="416.56" width="0.1524" layer="91"/>
+<wire x1="-147.32" y1="416.56" x2="-154.94" y2="416.56" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="416.56" x2="-154.94" y2="406.4" width="0.1524" layer="91"/>
+<wire x1="-154.94" y1="421.64" x2="-154.94" y2="416.56" width="0.1524" layer="91"/>
+<pinref part="U3" gate="G$1" pin="IN"/>
+<pinref part="D2" gate="G$1" pin="C"/>
+<wire x1="-160.02" y1="426.72" x2="-160.02" y2="416.56" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="416.56" x2="-154.94" y2="416.56" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+<junction x="-147.32" y="416.56"/>
+<pinref part="D3" gate="G$1" pin="C"/>
 </segment>
 </net>
 </nets>

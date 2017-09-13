@@ -13231,7 +13231,7 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <instance part="C7" gate="G$1" x="200.66" y="414.02"/>
 <instance part="GND15" gate="1" x="121.92" y="289.56"/>
 <instance part="GND13" gate="1" x="93.98" y="383.54"/>
-<instance part="GND16" gate="1" x="114.3" y="398.78"/>
+<instance part="GND16" gate="1" x="157.48" y="281.94"/>
 <instance part="C8" gate="G$1" x="-154.94" y="403.86"/>
 <instance part="C9" gate="G$1" x="-109.22" y="403.86"/>
 <instance part="U$27" gate="G$1" x="-154.94" y="396.24"/>
@@ -13246,7 +13246,7 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <instance part="D2" gate="G$1" x="-154.94" y="424.18" rot="R270"/>
 <instance part="R4" gate="G$1" x="-147.32" y="411.48" rot="R270"/>
 <instance part="+3V1" gate="G$1" x="-139.7" y="325.12" rot="MR0"/>
-<instance part="J$2" gate="1" x="121.92" y="426.72"/>
+<instance part="J$2" gate="1" x="165.1" y="309.88"/>
 <instance part="U4" gate="G$1" x="83.82" y="299.72"/>
 <instance part="GND1" gate="1" x="50.8" y="279.4"/>
 <instance part="GND10" gate="1" x="111.76" y="279.4"/>
@@ -13334,19 +13334,19 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <pinref part="GND15" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="114.3" y1="408.94" x2="114.3" y2="401.32" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="292.1" x2="157.48" y2="284.48" width="0.1524" layer="91"/>
 <pinref part="GND16" gate="1" pin="GND"/>
-<wire x1="119.38" y1="421.64" x2="119.38" y2="419.1" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="419.1" x2="119.38" y2="416.56" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="416.56" x2="119.38" y2="414.02" width="0.1524" layer="91"/>
-<wire x1="114.3" y1="408.94" x2="119.38" y2="414.02" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="304.8" x2="162.56" y2="302.26" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="302.26" x2="162.56" y2="299.72" width="0.1524" layer="91"/>
+<wire x1="162.56" y1="299.72" x2="162.56" y2="297.18" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="292.1" x2="162.56" y2="297.18" width="0.1524" layer="91"/>
 <pinref part="J$2" gate="1" pin="GND@0"/>
 <pinref part="J$2" gate="1" pin="GND@1"/>
-<junction x="119.38" y="419.1"/>
+<junction x="162.56" y="302.26"/>
 <pinref part="J$2" gate="1" pin="GND@2"/>
-<junction x="119.38" y="416.56"/>
+<junction x="162.56" y="299.72"/>
 <pinref part="J$2" gate="1" pin="GND@3"/>
-<junction x="119.38" y="414.02"/>
+<junction x="162.56" y="297.18"/>
 </segment>
 <segment>
 <pinref part="C9" gate="G$1" pin="2"/>
@@ -13676,14 +13676,6 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <label x="109.22" y="307.34" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$4" class="0">
-<segment>
-<wire x1="106.68" y1="401.32" x2="106.68" y2="403.86" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="403.86" x2="116.84" y2="414.02" width="0.1524" layer="91"/>
-<wire x1="116.84" y1="426.72" x2="116.84" y2="414.02" width="0.1524" layer="91"/>
-<pinref part="J$2" gate="1" pin="SIGNAL"/>
-</segment>
-</net>
 <net name="VBAT" class="0">
 <segment>
 <pinref part="VBAT" gate="G$1" pin="VBAT"/>
@@ -13752,6 +13744,18 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <pinref part="U4" gate="G$1" pin="RESET"/>
 <wire x1="71.12" y1="294.64" x2="55.88" y2="294.64" width="0.1524" layer="91"/>
 <label x="55.88" y="294.64" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="ANT" class="0">
+<segment>
+<pinref part="U4" gate="G$1" pin="ANT"/>
+<wire x1="96.52" y1="289.56" x2="104.14" y2="289.56" width="0.1524" layer="91"/>
+<label x="99.06" y="289.56" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="J$2" gate="1" pin="SIGNAL"/>
+<wire x1="160.02" y1="309.88" x2="139.7" y2="309.88" width="0.1524" layer="91"/>
+<label x="139.7" y="309.88" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
