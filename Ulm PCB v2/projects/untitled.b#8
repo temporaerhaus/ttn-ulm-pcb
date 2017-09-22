@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.001667" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.000123031496" altunitdist="mil" altunit="mil"/>
+<grid distance="0.001667" unitdist="inch" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.000123031496" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
@@ -9165,27 +9165,22 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <contactref element="X2" pad="D-"/>
 <contactref element="U1" pad="16"/>
 <wire x1="23.522" y1="35.579" x2="23.503" y2="35.56" width="0.254" layer="1"/>
-<wire x1="26.9494" y1="43.6372" x2="26.9494" y2="36.909809375" width="0.3048" layer="1"/>
-<wire x1="26.9494" y1="36.909809375" x2="26.87500625" y2="36.73020625" width="0.3048" layer="1" curve="-44.999502"/>
-<wire x1="26.87500625" y1="36.73020625" x2="25.7302" y2="35.5854" width="0.3048" layer="1"/>
-<wire x1="25.7302" y1="35.5854" x2="23.53745" y2="35.5854" width="0.3048" layer="1"/>
+<wire x1="24.653065625" y1="35.5854" x2="23.53745" y2="35.5854" width="0.3048" layer="1"/>
 <wire x1="23.53745" y1="35.5854" x2="23.522" y2="35.579" width="0.3048" layer="1" curve="45"/>
-<wire x1="21.669625" y1="45.480746875" x2="25.00064375" y2="45.480746875" width="0.3048" layer="1"/>
-<wire x1="25.00064375" y1="45.480746875" x2="25.180246875" y2="45.406353125" width="0.3048" layer="1" curve="-44.999502"/>
-<wire x1="25.180246875" y1="45.406353125" x2="26.9494" y2="43.6372" width="0.3048" layer="1"/>
+<wire x1="21.669625" y1="45.480746875" x2="23.9174625" y2="45.480746875" width="0.3048" layer="1"/>
+<wire x1="23.9174625" y1="45.480746875" x2="25.701471875" y2="43.6967375" width="0.3048" layer="1"/>
+<wire x1="25.701471875" y1="43.6967375" x2="25.701471875" y2="36.63380625" width="0.3048" layer="1"/>
+<wire x1="25.701471875" y1="36.63380625" x2="24.653065625" y2="35.5854" width="0.3048" layer="1"/>
 </signal>
 <signal name="USB_D+">
 <contactref element="X2" pad="D+"/>
 <contactref element="U1" pad="15"/>
-<wire x1="23.522" y1="36.229" x2="25.303390625" y2="36.229" width="0.3048" layer="1"/>
-<wire x1="25.303390625" y1="36.229" x2="25.48299375" y2="36.30339375" width="0.3048" layer="1" curve="44.999502"/>
-<wire x1="25.48299375" y1="36.30339375" x2="26.2382" y2="37.0586" width="0.3048" layer="1"/>
-<wire x1="26.2382" y1="43.201790625" x2="26.2382" y2="37.0586" width="0.3048" layer="1"/>
-<wire x1="26.16380625" y1="43.38139375" x2="26.2382" y2="43.201790625" width="0.3048" layer="1" curve="-44.999502"/>
+<wire x1="24.216559375" y1="36.229" x2="23.522" y2="36.229" width="0.3048" layer="1"/>
 <wire x1="21.674809375" y1="44.7294" x2="21.669625" y2="44.680746875" width="0.3048" layer="1" curve="-45"/>
-<wire x1="21.669625" y1="44.680746875" x2="24.75924375" y2="44.680746875" width="0.3048" layer="1"/>
-<wire x1="24.75924375" y1="44.680746875" x2="24.938846875" y2="44.606353125" width="0.3048" layer="1" curve="-44.999502"/>
-<wire x1="24.938846875" y1="44.606353125" x2="26.16380625" y2="43.38139375" width="0.3048" layer="1"/>
+<wire x1="21.669625" y1="44.680746875" x2="23.531890625" y2="44.680746875" width="0.3048" layer="1"/>
+<wire x1="23.531890625" y1="44.680746875" x2="24.600584375" y2="43.612053125" width="0.3048" layer="1"/>
+<wire x1="24.600584375" y1="43.612053125" x2="24.600584375" y2="36.613025" width="0.3048" layer="1"/>
+<wire x1="24.600584375" y1="36.613025" x2="24.216559375" y2="36.229" width="0.3048" layer="1"/>
 </signal>
 <signal name="CTS">
 <contactref element="U1" pad="11"/>

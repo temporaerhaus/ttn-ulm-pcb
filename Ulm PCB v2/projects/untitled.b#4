@@ -9160,6 +9160,9 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <via x="23.626728125" y="10.585446875" extent="1-16" drill="0.8"/>
 <via x="27.733878125" y="10.500765625" extent="1-16" drill="0.8"/>
 <via x="21.128559375" y="3.345003125" extent="1-16" drill="0.8"/>
+<via x="21.679003125" y="10.670134375" extent="1-16" drill="0.6"/>
+<via x="25.65913125" y="10.712475" extent="1-16" drill="0.6"/>
+<via x="29.681603125" y="7.155765625" extent="1-16" drill="0.6"/>
 </signal>
 <signal name="USB_D-">
 <contactref element="X2" pad="D-"/>
