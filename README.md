@@ -14,7 +14,7 @@ Since there is no additional hardware, this version is less energy-hungry than V
 
 In v2 we added a multitude of goodies for you comfort as a LoRaWan-enthusiast. 
 The features include:
-* onboard FTDI and USB, so you can flash your Arduino easily by connection in to your PC directly
+* onboard FTDI and USB, so you can flash your Arduino easily by connecting it to your PC directly
 * battery connector
 * _battery charger_ included, so you can charge your LiPo-battery while plugged into the PC
 * a combinded wire/ufl/sma connector is also onboard.
