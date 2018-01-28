@@ -1,5 +1,4 @@
-﻿Index,Menge,Teilenummer,Beschreibung,Kundenreferenz,Verfügbare Menge,Nachbestellmenge,Einheitspreis EUR,Gesamtpreis
- EUR,
+﻿Index,Menge,Teilenummer,Beschreibung,Kundenreferenz,Verfügbare Menge,Nachbestellmenge,Einheitspreis EUR,Gesamtpreis EUR,
 1,10,MCP73831T-2ACI/OTCT-ND,IC CONTROLLR LI-ION 4.2V SOT23-5,,10,0,0,50000,5,00,
 2,10,768-1007-1-ND,IC USB FS SERIAL UART 28-SSOP,,10,0,3,43800,34,38,
 3,10,1016-1873-1-ND,IC REG LINEAR 3.3V 500MA SOT23-5,,10,0,0,53600,5,36,
