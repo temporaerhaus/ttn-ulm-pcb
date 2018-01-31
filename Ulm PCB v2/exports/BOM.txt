@@ -1,27 +1,29 @@
-"Part";"Value";"Device";"Package";"Description";"PROD_ID";
-"C1";"0.1uF";"C-EUC0805";"C0805";"CAPACITOR, European symbol";"";
-"C2";"0.1uF";"C-EUC0805";"C0805";"CAPACITOR, European symbol";"";
-"C4";"10u";"C-EUC0805";"C0805";"CAPACITOR, European symbol";"";
-"C5";"10uF";"CAP_POL1206";"EIA3216";"Capacitor Polarized";"";
-"C6";"100n";"C-EUC0805";"C0805";"CAPACITOR, European symbol";"";
-"C7";"100n";"C-EUC0805";"C0805";"CAPACITOR, European symbol";"";
-"C8";"10µF";"C-EUC0805";"C0805";"CAPACITOR, European symbol";"";
-"C9";"1uF";"C-EUC0805";"C0805";"CAPACITOR, European symbol";"";
-"C10";"10µF";"C-EUC0805";"C0805";"CAPACITOR, European symbol";"";
-"D2";"MBR120";"DIODE-SCHOTTKYSOD-123";"SOD-123";"";"";
-"J$2";"ANTENNATINY";"ANTENNATINY";"SMA_UFL_PAD_TINY";"SMA Antenna Connector";"";
-"J2";"";"JST_2MM_MALE";"JST-2-SMD";"Mates to single-cell LiPo batteries.";"CONN-08352";
-"LED1";"Red";"LED0603";"LED-0603";"LEDs";"";
-"LED2";"Green";"LED0603";"LED-0603";"LEDs";"";
-"LED5";"Green";"LED0603";"LED-0603";"LEDs";"";
-"R-PROG2";"10k";"R-EU_R0805";"R0805";"RESISTOR, European symbol";"";
-"R1";"1K";"R-EU_R0805";"R0805";"RESISTOR, European symbol";"";
-"R2";"1K";"R-EU_R0805";"R0805";"RESISTOR, European symbol";"";
-"R3";"330";"R-EU_R0805";"R0805";"RESISTOR, European symbol";"";
-"R4";"100k";"RESISTOR_0603_NOOUT";"0603-NO";"Resistors";"";
-"U$1";"";"ARDUINO_PRO_MINI";"ARDUINO_PRO_MINI";"For creating Arduino Pro Mini shields";"";
-"U1";"FT232RLSSOP";"FT232RLSSOP";"SSOP28DB";"USB UART";"";
-"U2";"MCP73831";"MCP73831";"SOT23-5";"Miniature single cell, fully integrated Li-Ion, Li-polymer charge management controller";"IC-09995";
-"U3";"SPX3819-3.3";"VREG_SOT23-5";"SOT23-5";"SOT23-5 Fixed Voltage Regulators";"";
-"U4";"RFM69HCW";"RFM69HCW_SMT";"RFMHCW_SMT";"RFM69HCW - ISM Band RF Transceiver";"";
-"X3";"microUSB";"USB_MICRO_20329_V2";"4UCONN_20329_V2";"USB Connectors";"";
+Stückliste exportiert aus /Users/deger/Desktop/git/ttn-ulm-pcb/Ulm PCB v2/projects/untitled.sch am 31.01.18 19:43
+
+Part    Value       Device                Package          Description                                                                             PROD_ID   
+C1      0.1uF       C-EUC0805             C0805            CAPACITOR, European symbol                                                                        
+C2      0.1uF       C-EUC0805             C0805            CAPACITOR, European symbol                                                                        
+C4      10u         C-EUC0805             C0805            CAPACITOR, European symbol                                                                        
+C5      10uF        CAP_POL1206           EIA3216          Capacitor Polarized                                                                               
+C6      100n        C-EUC0805             C0805            CAPACITOR, European symbol                                                                        
+C7      100n        C-EUC0805             C0805            CAPACITOR, European symbol                                                                        
+C8      10µF        C-EUC0805             C0805            CAPACITOR, European symbol                                                                        
+C9      1uF         C-EUC0805             C0805            CAPACITOR, European symbol                                                                        
+C10     10µF        C-EUC0805             C0805            CAPACITOR, European symbol                                                                        
+D2      MBR120      DIODE-SCHOTTKYSOD-123 SOD-123                                                                                                            
+                                                                           
+J2                  JST_2MM_MALE          JST-2-SMD        Mates to single-cell LiPo batteries.                                                    CONN-08352
+LED1    Red         LED0603               LED-0603         LEDs                                                                                              
+LED2    Green       LED0603               LED-0603         LEDs                                                                                              
+LED5    Green       LED0603               LED-0603         LEDs                                                                                              
+R-PROG2 10k         R-EU_R0805            R0805            RESISTOR, European symbol                                                                         
+R1      1K          R-EU_R0805            R0805            RESISTOR, European symbol                                                                         
+R2      1K          R-EU_R0805            R0805            RESISTOR, European symbol                                                                         
+R3      330         R-EU_R0805            R0805            RESISTOR, European symbol                                                                         
+R4      100k        RESISTOR_0603_NOOUT   0603-NO          Resistors                                                                                         
+                                                            
+U1      FT232RLSSOP FT232RLSSOP           SSOP28DB         USB UART                                                                                          
+U2      MCP73831    MCP73831              SOT23-5          Miniature single cell, fully integrated Li-Ion, Li-polymer charge management controller IC-09995  
+U3      SPX3819-3.3 VREG_SOT23-5          SOT23-5          SOT23-5 Fixed Voltage Regulators                                                                  
+                                                             
+X3      microUSB    USB_MICRO_20329_V2    4UCONN_20329_V2  USB Connectors                                                                                    
