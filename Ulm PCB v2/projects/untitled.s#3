@@ -13180,7 +13180,7 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <instance part="J$2" gate="1" x="165.1" y="309.88"/>
 <instance part="U4" gate="G$1" x="83.82" y="299.72"/>
 <instance part="GND1" gate="1" x="50.8" y="279.4"/>
-<instance part="GND10" gate="1" x="111.76" y="279.4"/>
+<instance part="GND10" gate="1" x="111.76" y="274.32"/>
 <instance part="D3" gate="G$1" x="-160.02" y="429.26" rot="R270"/>
 <instance part="+3V2" gate="G$1" x="121.92" y="320.04" rot="MR0"/>
 </instances>
@@ -13299,6 +13299,12 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <wire x1="71.12" y1="289.56" x2="50.8" y2="289.56" width="0.1524" layer="91"/>
 <junction x="50.8" y="289.56"/>
 <pinref part="GND1" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U4" gate="G$1" pin="GND@1"/>
+<wire x1="96.52" y1="292.1" x2="111.76" y2="292.1" width="0.1524" layer="91"/>
+<wire x1="111.76" y1="292.1" x2="111.76" y2="276.86" width="0.1524" layer="91"/>
+<pinref part="GND10" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="USB_D-" class="0">
@@ -13601,13 +13607,6 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <pinref part="C1" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="U4" gate="G$1" pin="GND@1"/>
-<wire x1="96.52" y1="292.1" x2="111.76" y2="292.1" width="0.1524" layer="91"/>
-<wire x1="111.76" y1="292.1" x2="111.76" y2="281.94" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="D2" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="D2"/>
@@ -13684,9 +13683,15 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 </sheet>
 </sheets>
 <errors>
-<approved hash="201,1,-109.22,426.72,+3V3,3.3V\, +3V3,,,,"/>
-<approved hash="201,1,-43.18,233.68,5V,3.3V\, 5V,,,,"/>
-<approved hash="201,1,-53.34,233.68,5V,3.3V\, 5V,,,,"/>
+<approved hash="202,1,-99.06,210.82,U1,RESET,,,,"/>
+<approved hash="202,1,-99.06,215.9,U1,OSCI,,,,"/>
+<approved hash="202,1,-68.58,218.44,U1,DSR,,,,"/>
+<approved hash="202,1,-68.58,215.9,U1,DCD,,,,"/>
+<approved hash="202,1,-68.58,213.36,U1,RI,,,,"/>
+<approved hash="202,1,-68.58,203.2,U1,PWREN,,,,"/>
+<approved hash="202,1,-68.58,200.66,U1,TXDEN,,,,"/>
+<approved hash="202,1,-68.58,198.12,U1,SLEEP,,,,"/>
+<approved hash="209,1,-68.58,226.06,CTS,,,,,"/>
 </errors>
 </schematic>
 </drawing>

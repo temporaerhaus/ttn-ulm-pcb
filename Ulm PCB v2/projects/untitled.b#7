@@ -9077,7 +9077,7 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <attribute name="NAME" x="39.2167875" y="36.846384375" size="1.27" layer="25"/>
 <attribute name="VALUE" x="43.2816" y="36.6354375" size="1.27" layer="27"/>
 </element>
-<element name="LED5" library="SparkFun" package="LED-0603" value="Green" x="54.61" y="40.386" rot="R90"/>
+<element name="LED5" library="SparkFun" package="LED-0603" value="Green" x="53.763165625" y="40.386" rot="R90"/>
 <element name="J2" library="SparkFun-Connectors" package="JST-2-SMD" value="" x="52.832" y="45.72" rot="R270">
 <attribute name="PROD_ID" value="CONN-08352" x="69.088" y="54.61" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
@@ -9224,7 +9224,6 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <wire x1="38.12975" y1="35.39994375" x2="37.57105" y2="34.84124375" width="0.4064" layer="1"/>
 <wire x1="37.57105" y1="34.84124375" x2="37.57105" y2="33.58325" width="0.4064" layer="1"/>
 <wire x1="37.57105" y1="33.58325" x2="36.8554" y2="32.8676" width="0.4064" layer="1"/>
-<wire x1="36.83" y1="32.8422" x2="36.8554" y2="32.8676" width="0.4064" layer="1"/>
 <wire x1="36.8554" y1="32.8676" x2="36.83" y2="32.8422" width="0.4064" layer="1"/>
 <via x="36.8554" y="32.8676" extent="1-16" drill="0.6" diameter="0.85"/>
 <polygon width="0.4064" layer="16">
@@ -9238,6 +9237,10 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <vertex x="31.036540625" y="11.9403875"/>
 <vertex x="31.036540625" y="0.9738625"/>
 </polygon>
+<contactref element="LED5" pad="A"/>
+<via x="56.31459375" y="40.394078125" extent="1-16" drill="0.6"/>
+<wire x1="56.31459375" y1="40.394078125" x2="54.52124375" y2="40.394078125" width="0.3048" layer="1"/>
+<wire x1="54.52124375" y1="40.394078125" x2="54.513165625" y2="40.386" width="0.3048" layer="1"/>
 </signal>
 <signal name="TXLED">
 <contactref element="U1" pad="23"/>
@@ -9368,7 +9371,7 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <signal name="N$5">
 <contactref element="LED5" pad="C"/>
 <contactref element="R3" pad="1"/>
-<wire x1="51.242" y1="40.386" x2="53.86" y2="40.386" width="0.254" layer="1"/>
+<wire x1="51.242" y1="40.386" x2="53.013165625" y2="40.386" width="0.254" layer="1"/>
 </signal>
 <signal name="D7">
 <contactref element="U$1" pad="D7"/>
@@ -9427,9 +9430,6 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <wire x1="23.522" y1="34.929" x2="22.268209375" y2="34.929" width="0.4064" layer="1"/>
 <wire x1="22.268209375" y1="34.929" x2="22.08860625" y2="34.85460625" width="0.4064" layer="1" curve="44.999502"/>
 <wire x1="22.08860625" y1="34.85460625" x2="21.524" y2="34.29" width="0.4064" layer="1"/>
-</signal>
-<signal name="+3V3">
-<contactref element="LED5" pad="A"/>
 </signal>
 <signal name="N$16">
 <contactref element="U4" pad="2P"/>
