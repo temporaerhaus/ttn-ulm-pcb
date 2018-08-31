@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.0.1">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9101,6 +9101,9 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <param name="checkRestrict" value="0"/>
 <param name="checkStop" value="0"/>
 <param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -9715,9 +9718,7 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <wire x1="54.7494625" y1="13.79590625" x2="47.08408125" y2="21.4612875" width="0.1524" layer="1"/>
 <wire x1="47.08408125" y1="21.4612875" x2="47.08408125" y2="35.524771875" width="0.1524" layer="1"/>
 <wire x1="47.08408125" y1="35.524771875" x2="46.364271875" y2="36.24458125" width="0.1524" layer="1"/>
-<wire x1="41.1138875" y1="36.24458125" x2="41.029203125" y2="36.159896875" width="0.1524" layer="1"/>
-<wire x1="41.029203125" y1="36.159896875" x2="40.140025" y2="37.049075" width="0.1524" layer="1"/>
-<wire x1="40.140025" y1="37.049075" x2="40.140025" y2="37.811228125" width="0.1524" layer="1"/>
+<wire x1="40.140025" y1="37.811228125" x2="40.140025" y2="37.049075" width="0.1524" layer="1"/>
 <wire x1="40.140025" y1="37.811228125" x2="39.46255625" y2="38.488696875" width="0.1524" layer="1"/>
 <wire x1="35.63330625" y1="38.488696875" x2="33.915778125" y2="40.206225" width="0.1524" layer="1"/>
 <wire x1="39.46255625" y1="38.488696875" x2="35.63330625" y2="38.488696875" width="0.1524" layer="1"/>
@@ -9725,9 +9726,17 @@ http://www.geeetech.com/Documents/Arduino%20Pro%20Mini%20Eagle%20Files.zip</desc
 <wire x1="46.364271875" y1="36.24458125" x2="41.16310625" y2="36.24458125" width="0.1524" layer="16"/>
 <wire x1="41.16310625" y1="36.24458125" x2="41.1138875" y2="36.2938" width="0.1524" layer="16"/>
 <via x="41.1138875" y="36.2938" extent="1-16" drill="0.35"/>
-<wire x1="41.1138875" y1="36.2938" x2="41.1138875" y2="36.24458125" width="0" layer="19" extent="1-1"/>
+<wire x1="40.140025" y1="37.049075" x2="40.3586125" y2="37.049075" width="0.254" layer="1"/>
+<wire x1="40.3586125" y1="37.049075" x2="41.1138875" y2="36.2938" width="0.254" layer="1"/>
 </signal>
 </signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
 <errors>
 <approved hash="3,1,9d6df6bff6579d85"/>
 <approved hash="3,1,03dde42451ca9fa9"/>
