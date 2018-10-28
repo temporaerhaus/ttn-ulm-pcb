@@ -3,7 +3,7 @@ _Dieses Dokument ist in Englisch verfasst, da es Informationen für Fortgeschrit
 
 # Some Quality Assurance
 
-As our boards are botched up, i.e. produced manually, we'll also call it botch assurance.
+As our boards are botched up, i.e. produced manually, we'll also call it _botch assurance_.
 
 
 ## General Information
@@ -25,7 +25,6 @@ Minimal image based on Debian Stretch
 Version: October 2018
 Release date: 2018-10-09
 Kernel version: 4.14
-Release notes: Link
 ```
 
 `raspi-config`:
@@ -68,7 +67,7 @@ arduino-cli lib install "IBM LMIC framework"
 ```
 
 
-## the actual BA
+## Actual BA
 
 ```
 mkdir -p ~/ba
@@ -99,7 +98,7 @@ arduino-cli upload --port /dev/ttyUSB0 --fqbn arduino:avr:pro:cpu=8MHzatmega328 
 
 
 
-== Debugging ==
+### Debugging
 
 `arduino-cli board list` should return:
 ```
@@ -114,7 +113,7 @@ Bus 001 Device 004: ID 0403:6001 Future Technology Devices International, Ltd FT
 ```
 
 
-## Surplus information
+# Surplus information
 
 _Not needed for BA._
 
