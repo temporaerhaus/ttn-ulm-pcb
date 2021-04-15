@@ -4,7 +4,10 @@
 
 Welcome to the TTN Ulm Münsterplatine repository.
 Our local TTN-community was under the impression that there is a tremendous need for a cheap and easy to use LoRaWan All-in-one kit, and so we created one.
-The work is build around the ready-made arduino Pro Mini which can be bought from various sources for under 3 EUR per piece and the RFM96W LoRa tranceiver for communication. 
+The work is build around the ready-made arduino Pro Mini which can be bought from various sources for under 3 EUR per piece and the RFM96W LoRa tranceiver for communication.
+
+After the board has been designed by the members of the community, we were sponsored by Initiative Ulm Digital that funded our initial production. 
+Minsternode has then been prominently featured in many events, including the yearly conference of Initiave Ulm Digital and the event "Ulm Macht Zukunft".
 
 # 2nd major version
 
